@@ -1,0 +1,67 @@
+---
+layout: post
+title: "Project Constellation Dev1"
+date: 2018-12-27 01:34:20 +0800
+comments: true
+categories: [dev]
+excerpt: "作为一个送给自己2019年的新年礼物、2018年十周年的纪念礼物，我很开心与你分享Constellation项目的Dev1版本。"
+stickie: true
+---
+
+## Project Constellation
+
+Project Constellation（中文意为星座、荟萃）, which will be officially released in 2019 January, is the brand new blog powered by Jekyll and hosted on Github Pages of mine.
+
+## The Brief Story of Constellation
+
+萌发做这件事情的想法已经不是一天两天了，而现在来看这件事情拥有更多的仪式感，或者说需要一个开始理由。长期以来是由于我专攻算法和数模，对于从头写一个博客来说能力有限，也一直找不到心仪的（定制化、可开发性等）代替品，也想到购买云主机自己挂站，又因为早年的WordPress维护失败造成了阴影，Django等架构对我来说开发任务又过于繁重，一直搁置到近期。
+
+近期萌发的这个想法大概就是在2018年12月初，因为很想很想写一些东西，但不管是Qzone还是Cppblog貌似都太老了，独立性也不够强。10月我在Windows上编译Caffe出现了很多问题，因此搜索到了很多博客，在一次评论中我无意中点击进入了该作者的Github页面，发现了使用Github托管的评论系统，但他博客其实是维护在Coding.net上面的，这的确又激起了我的开发热情。之后对这类独立博客调查后，恍然间发现原来Github Pages based Blog一直在我身边——以开源项目文档、个人博客、Wiki等形式在帮助我理解和学习。通过一天的Google和整理，我开始了行动，经过几天努力，才得以见到Constellation的Dev1版本，在未来的一个月内，它将不断成长，最终稳定下来，成为见证我下一路成长的伙伴。
+
+2018年是我学习计算机的十周年，同在今年，我成为了计算机科学与技术专业的研究生，尽管至此我还抱有遗憾或经历低迷，但2018年作为一个始末，我真真切切地享受到了这十年来最畅快的一次成功，“这个机会再合适不过了！”，我对自己说。
+
+作为一个送给自己**2019年的新年礼物**、**2018年十周年的纪念礼物**，我很开心与你分享Constellation项目的Dev1版本。
+
+## Journals
+
+### Before 2018/12/23
+
+- 学习使用Markdown，着重在格式排版、数学编辑，图表功能短期内不会使用，尚未学习。
+
+### 2018/12/23
+
+- 新建第一个空仓库 ConstellationDev0（测试完成后已删除），使用README.md构建了第一个原型。
+
+- 在_config.yml中开启MathJax支持，通过Markdown的HTML支持，使得满足对Latex数学公式的支持。
+
+- 发现在线维护Github Pages局限太多，不支持大多数git功能：不能在线commit多个文件的修改、提供主题过于丑陋等。
+
+- 开始探索Jekyll主题，最先选中的是[Contrast](https://github.com/niklasbuschmann/contrast)，在_config.yml中添加remote-theme可以直接加载主题，缺失可维护性，最终弃用。
+
+- 转而使用Fork，但由于尚未理解整个Jekyll构造，添加[Katex](https://katex.org/)支持时候出现问题，找不到加入js代码的文件等，使用新的主题。
+
+### 2018/12/24-25
+
+- 在本地使用Msys2的Mingw64构建Jekyll环境。Fork、Clone项目，使用(bundle exec) jekyll serve时候出现时区等问题，在_config.yml中添加timezone解决。
+
+- 关于环境，存在问题是Ctrl+C停用serve之后，会留存名为“Ruby interupreter (CUI) 2.5.3p105[x64-mingw32]”和“Runtime Broker”进程，目前不影响效率，手动结束进程。
+
+- 项目启动后，会将文件生成到静态的_site/中，直接修改_site/中的文件是无效的。最终通过**观察法**，理解了“拼接”起来的HTML页面和CSS文件关系，开发思路完全打开。
+
+- [Constellation2019Dev1Leonids](https://github.com/sleeplessai/Constellation2019Dev1Leonids)是选中的另一款主题，同样是简洁风，有sidebar，第一感觉字体偏小，图片很大。以狮子座流星雨为名，的确很吸引我。
+
+- [mirror-web](https://github.com/sleeplessai/mirror-web)是清华大学开源镜像站的网站项目。作为[我唯一指定的开源镜像站](https://tuna.moe/)，它的页面设计和功能真的非常棒，一度成为我想模仿的对象，因此引发了无人应答的[question not issue #26](https://github.com/tuna/blogroll/issues/26)。通过这个项目，很早之前就了解有Jekyll这么个玩意，那时候只认为Jekyll是一个静态页面生成脚本，语言也是我不会的Ruby。没想到却与Constellation项目的技术路线不谋而合。本次fork该项目是用于理解Jekyll的运行原理，感谢清华大学的TUNA协会。
+
+### 2018/12/26-27
+
+- 今天主要进度是在26日凌晨和傍晚至晚上完成的。
+
+- 博客的核心理念是表达（express）,核心是post，故暂时从项目中删除tags词云、resume简历、about（关于）页面。
+
+- 26日凌晨，通读了[Constellation2019Dev1Leonids](https://github.com/sleeplessai/Constellation2019Dev1Leonids)的代码，在主题色和头像文件上做出了更改，我对原生配色不满意，需要重新寻找配色。
+
+- 顺带解决了[Katex](https://katex.org/)的支持问题，拥有了更快的数学公式渲染速度。到CDN找到最新版本的源，由于使用了kramdown解析，数学书写全部改用双dollars的形式。
+
+- 26日下午，对代码高亮的支持进行检查，同期对主题色进行搜索。[配色网](http://peise.net)成为主战场，翻阅试验了6小时之后，于26日晚10时找到满意的配色。最后使用了
+
+- Windows的字体渲染的确还是赶不上MacOS，在我的X24Q屏幕以2K分辨率观察字体，边缘还是有不少模糊，在使用亮色系时，字体会变得更加模糊。如果字体不会冲突，代码高亮渲染颜色不会出现歧义，Constellation的Dev1版本颜色就不作改变了。

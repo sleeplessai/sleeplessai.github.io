@@ -1,0 +1,77 @@
+#
+###################################
+# Site wide configuration
+####################################
+#
+title: Constellation Dev
+email:
+description: Desc
+url: 
+keywords: ["blog", "jekyll"]
+
+#
+###################################
+# Jekyll configuration
+####################################
+#
+timezone:          Asia/Shanghai
+markdown:          kramdown
+# highlighter:       rouge
+excerpt_separator: <!--more-->
+permalink:         /articles/:year-:month/:title
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+  math_engine: mathjax
+
+#
+###################################
+# Site Owner configuration
+####################################
+#
+owner:
+  authors: ['Molasses']
+  name: Constellation Dev1
+  avatar: molasses-avatar.jpg
+  job: "Molasses's still developing blog"
+  bio: "非同凡想，付诸行动  Think Different, Take Action"
+  email: katrielle.layton@outlook.com
+  disqus-shortname:
+  twitter: #username
+  facebook: #username
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: sleeplessai
+  gitlab: #username
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: #username
+  skype: #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  500px: #username
+  codepen: #username
+  reddit: #username
+  telegram: #username
+
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"
