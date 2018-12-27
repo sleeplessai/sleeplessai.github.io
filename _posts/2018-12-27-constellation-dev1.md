@@ -56,7 +56,7 @@ Project Constellation（中文意为星座、荟萃）, which will be officially
 
 - 今天主要进度是在26日凌晨和傍晚至晚上完成的。
 
-- 博客的核心理念是表达（express）,核心是post，故暂时从项目中删除tags词云、resume简历、about（关于）页面。
+- 博客的核心理念是表达（express）,核心是post，故暂时从项目中删除tags（词云）、resume（简历）、about（关于）页面。
 
 - 26日凌晨，通读了[Constellation2019Dev1Leonids](https://github.com/sleeplessai/Constellation2019Dev1Leonids)的代码，在主题色和头像文件上做出了更改，我对原生配色不满意，需要重新寻找配色。
 
