@@ -4,7 +4,7 @@ title: "Project Constellation Dev1"
 date: 2018-12-27 01:34:20 +0800
 comments: true
 categories: [dev]
-excerpt: "作为一个送给自己2019年的新年礼物、2018年十周年的纪念礼物，我很开心与你分享Constellation项目的Dev1版本。"
+excerpt: "一份送给自己的2019年的新年礼物、2018年十周年的纪念礼物，现与你分享！"
 stickie: true
 ---
 
