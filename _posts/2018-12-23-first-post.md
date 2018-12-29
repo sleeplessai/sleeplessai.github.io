@@ -2,7 +2,7 @@
 layout: post
 title: "First Post"
 date: 2018-12-23 00:00:10 +0800
-comments: true
+comments: false
 categories: [dev]
 excerpt: "Constellation 意为星座、荟萃。"
 # stickie: true

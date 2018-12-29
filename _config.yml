@@ -75,3 +75,13 @@ owner:
 webrick:
   headers:
     Access-Control-Allow-Origin: "*"
+
+#
+###################################
+# Site Gitalk configuration
+####################################
+#
+gitalk:
+  client_id: 5019bd38beb4c52307f7
+  client_secret: ae4e9876955354a5a875b9b0243c2a59e9eaedf7
+  repo: sleeplessai.github.io.gitalk
