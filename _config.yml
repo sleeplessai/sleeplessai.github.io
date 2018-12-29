@@ -4,7 +4,7 @@
 ####################################
 #
 title: Constellation Dev
-email:
+email: katrielle.layton@outlook.com
 description: Desc
 url: 
 keywords: ["blog", "jekyll"]
@@ -15,11 +15,11 @@ keywords: ["blog", "jekyll"]
 ####################################
 #
 timezone:          Asia/Shanghai
-markdown:          kramdown
 # highlighter:       rouge
 excerpt_separator: <!--more-->
 permalink:         /articles/:year-:month/:title
 
+markdown:          kramdown
 kramdown:
   auto_ids: true
   footnote_nr: 1

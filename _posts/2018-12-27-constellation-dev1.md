@@ -10,17 +10,17 @@ stickie: true
 
 ## Project Constellation
 
-Project Constellation（中文意为星座、荟萃）, which will be officially released in 2019 January, is the brand new blog powered by Jekyll and hosted on Github Pages of mine.
+Project Constellation（中文意为星座、荟萃）, which will be officially released in 2019 January, is the brand new blog powered by Jekyll and hosted on GitHub Pages of mine.
 
 ## The Brief Story of Constellation
 
 萌发做这件事情的想法已经不是一两天了，现在来看这件事情却拥有更多的仪式感，或者说需要开始理由和契机。长期以来我主要研究算法，对于整体系统的构建没什么自信，也一直找不到心仪的（定制化、可开发性等）代替品，想到要购买云主机自己挂站，又因为早年的WordPress维护失败造成了阴影，用这类框架开发任务又过于繁重，一直搁置到近期。
 
-近期萌生这个想法大概是在2018年11月末，因为很想很想写一些东西，但不管是Qzone还是Cppblog貌似都太老旧，独立性也不够强，归属感更是无从谈起。10月我在Windows上编译Caffe出现了很多问题，因此阅读了很多博客的文章，有一篇对我帮助很大的文章，那个博客是维护在[Coding.net](https://coding.net/)上的。这又一次激起了我的开发热情，而课业忙碌就没行动。直到12月初对这类独立博客调查后，恍然间发现原来Github Pages based Blog一直在我身边：以文档、博客、专栏、Wiki的形式在帮助我的理解和学习。通过一天的整理，我终于开始了行动，经过几天努力，才得以见到Constellation的Dev1版本，在未来的一个月里，它将不断成长，最终稳定下来，成为见证我下一路成长的伙伴。
+近期萌生这个想法大概是在2018年11月末，因为很想很想写一些东西，但不管是Qzone还是Cppblog貌似都太老旧，独立性也不够强，归属感更是无从谈起。10月我在Windows上编译Caffe出现了很多问题，因此阅读了很多博客的文章，有一篇对我帮助很大的文章，那个博客是维护在[Coding.net](https://coding.net/)上的。这又一次激起了我的开发热情，而课业忙碌就没行动。直到12月初对这类独立博客调查后，恍然间发现原来[GitHub Pages](https://pages.github.com/) based Blog一直在我身边：以文档、博客、专栏、Wiki的形式在帮助我的理解和学习。通过一天的整理，我终于开始了行动，经过几天努力，才得以见到[Constellation](https://sleeplessai.github.io/)的Dev1版本，在未来的一个月里，它将不断成长，最终稳定下来，成为见证我下一路成长的伙伴。
 
 2018年是我学习计算机的十周年，同在今年，我成为了计算机科学与技术专业的研究生，尽管至此我还抱有遗憾或经历低迷，但2018年作为一个始末，我真真切切地享受到了这十年来最畅快的一次成功，“这个机会再合适不过了！”，我对自己说。
 
-作为一份送给自己**2019年的新年礼物**、**2018年十周年的纪念礼物**，我很开心与你分享Constellation项目的Dev1版本。
+作为一份送给自己**2019年的新年礼物**、**2018年十周年的纪念礼物**，我很开心与你分享[Constellation](https://sleeplessai.github.io/)项目的Dev1版本。
 
 ## Journals
 
@@ -34,7 +34,7 @@ Project Constellation（中文意为星座、荟萃）, which will be officially
 
 - 在_config.yml中开启MathJax支持，通过Markdown的HTML支持，使得满足对Latex数学公式的支持。
 
-- 发现在线维护Github Pages局限太多，不支持大多数git功能：不能在线commit多个文件的修改、提供主题过于丑陋等。
+- 发现在线维护GitHub Pages局限太多，不支持大多数git功能：不能在线commit多个文件的修改、提供主题过于丑陋等。
 
 - 开始探索Jekyll主题，最先选中的是[Contrast](https://github.com/niklasbuschmann/contrast)，在_config.yml中添加remote-theme可以直接加载主题，缺失可维护性，最终弃用。
 
@@ -42,7 +42,7 @@ Project Constellation（中文意为星座、荟萃）, which will be officially
 
 ### 2018/12/24-25
 
-- 在本地使用Msys2的Mingw64构建Jekyll环境。Fork、Clone项目，使用(bundle exec) jekyll serve时候出现时区等问题，在_config.yml中添加timezone解决。
+- 在本地使用MSYS2的Mingw64构建Jekyll环境。Fork、Clone项目，使用(bundle exec) jekyll serve时候出现时区等问题，在_config.yml中添加timezone解决。
 
 - 关于环境，存在问题是Ctrl+C停用serve之后，会留存名为“Ruby interupreter (CUI) 2.5.3p105[x64-mingw32]”和“Runtime Broker”进程，目前不影响效率，手动结束进程。
 
@@ -50,7 +50,7 @@ Project Constellation（中文意为星座、荟萃）, which will be officially
 
 - [Constellation2019Dev1Leonids](https://github.com/sleeplessai/Constellation2019Dev1Leonids)是选中的另一款主题，同样是简洁风，有sidebar，第一感觉字体偏小，图片很大。以狮子座流星雨为名，的确很吸引我。
 
-- [mirror-web](https://github.com/sleeplessai/mirror-web)是清华大学开源镜像站的网站项目。作为[我唯一指定的开源镜像站](https://tuna.moe/)，它的页面设计和功能真的非常棒，一度成为我想模仿的对象，因此引发了无人应答的[question not issue #26](https://github.com/tuna/blogroll/issues/26)。通过这个项目，很早之前就了解有Jekyll这么个玩意，那时候只认为Jekyll是一个静态页面生成脚本，语言也是我不会的Ruby。没想到却与Constellation项目的技术路线不谋而合。本次fork该项目是用于理解Jekyll的运行原理，感谢清华大学的TUNA协会。
+- [mirror-web](https://github.com/sleeplessai/mirror-web)是清华大学开源镜像站的网站项目。作为[我唯一指定的开源镜像站](https://tuna.moe/)，它的页面设计和功能真的非常棒，一度成为我想模仿的对象，因此引发了无人应答的[question not issue #26](https://github.com/tuna/blogroll/issues/26)。通过这个项目，很早之前就了解有Jekyll这么个玩意，那时候只认为Jekyll是一个静态页面生成脚本，语言也是我不会的Ruby。没想到却与[Constellation项目](https://sleeplessai.github.io/)的技术路线不谋而合。本次fork该项目是用于理解Jekyll的运行原理，感谢清华大学的TUNA协会。
 
 ### 2018/12/26-27
 
@@ -64,4 +64,20 @@ Project Constellation（中文意为星座、荟萃）, which will be officially
 
 - 26日下午，对代码高亮的支持进行检查，同期对主题色进行搜索。[配色网](http://peise.net)成为主战场，翻阅试验了6小时之后，于26日晚10时找到满意的配色。最后使用了
 
-- Windows的字体渲染的确还是赶不上MacOS，在我的X24Q屏幕以2K分辨率观察字体，边缘还是有不少模糊，在使用亮色系时，字体会变得更加模糊。如果字体不会冲突，代码高亮渲染颜色不会出现歧义，Constellation的Dev1版本颜色就不作改变了。
+- Windows的字体渲染的确还是赶不上MacOS，在我的X24Q屏幕以2K分辨率观察字体，边缘还是有不少模糊，在使用亮色系时，字体会变得更加模糊。如果字体不会冲突，代码高亮渲染颜色不会出现歧义，[Constellation](https://sleeplessai.github.io/)的Dev1版本颜色就不作改变了。
+
+### 2018/12/29-30
+
+- 29日晚，完成了Comment功能的初步实现，基于[Gitalk](https://github.com/gitalk/gitalk)；[Disqus](https://disqus.com/)由于载入、用户登陆问题，弃用。
+
+- [Disqus](https://disqus.com/)样式和Emoji样式非常棒，后续中有想法将更漂亮的Emoji样式加入，还需修改[Gitalk](https://github.com/gitalk/gitalk)样式使其与[Constellation](https://sleeplessai.github.io/)风格更一致。
+
+- 目前还没有完成自动Initialize Comment的功能；另外，Console中会出现401（Unauthorized）错误。
+
+- 考虑到让更多朋友加入讨论，需要引入除GitHub账户以外的OAuth（QQ，WeChat，Weibo等)，目前使用的[Gitalk](https://github.com/gitalk/gitalk)将会被增强或自己开发一个新的Comment模块。
+
+- 30日凌晨，完成了小部分代码结构以优化效率：删除了独立的JS脚本，合并到统一的HTML文件中的script标签中，并为Comment和数学渲染的JS代码模块添加了载入判断，以优化载入速度。
+
+- 将原先内置的jQuery删除，更换最新版本的在线源，由[CDNJS](https://cdnjs.com/)提供。
+
+- 今日工作开始前，由于pacman将Ruby更新到2.6.0，导致坏境崩掉了，原因是Gem依赖中的ffi-1.9.25包仅支持到Ruby < 2.6.0。通过移除Ruby 2.6.0的包，到源上找了Ruby 2.5.3的包手工安装并在`/etc/pacman.conf`添加了`IgnorePkg = mingw-w64-x86_64-ruby`避免日常滚动破坏依赖。此外，开发前切记使用`bundle update`更新或使用`bundle install`安装所需的Gem包。

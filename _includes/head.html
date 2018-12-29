@@ -53,11 +53,12 @@
   <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
   <!-- 32x32 -->
   <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
-  
-  <!-- Load jQuery -->
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-  <!-- Load KaTeX -->
+
+  {% if page.math == true %}
+  <!-- jQuery -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- KaTex -->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js"></script>
-
+  {% endif %}
 </head>

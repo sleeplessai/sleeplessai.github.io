@@ -6,6 +6,7 @@ comments: false
 categories: [dev]
 excerpt: "Constellation 意为星座、荟萃。"
 # stickie: true
+math: true
 ---
 Constellation 意为**星座**、**荟萃**。
 
