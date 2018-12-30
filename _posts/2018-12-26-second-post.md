@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Second Post"
+title: "Code Highlighting"
 date:  2018-12-26 00:48:48 +0800
-categories: [dev]
+categories: [test]
 comments: false
 excerpt: "测试代码高亮！做一次调色艺术家！"
 math: false

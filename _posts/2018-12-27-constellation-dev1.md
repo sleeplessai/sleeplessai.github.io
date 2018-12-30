@@ -20,7 +20,7 @@ Project Constellation（中文意为星座、荟萃）, which will be officially
 
 2018年是我学习计算机的十周年，同在今年，我成为了计算机科学与技术专业的研究生，尽管至此我还抱有遗憾或经历低迷，但2018年作为一个始末，我真真切切地享受到了这十年来最畅快的一次成功，“这个机会再合适不过了！”，我对自己说。
 
-作为一份送给自己**2019年的新年礼物**、**2018年十周年的纪念礼物**，我很开心与你分享[Constellation](https://sleeplessai.github.io/)项目的Dev1版本。
+作为一份送给自己**2019年的新年礼物**、**2018年十周年的纪念礼物**，我很开心与你分享[**Constellation**](https://sleeplessai.github.io/)项目的Dev1版本。
 
 ## Journals
 
@@ -32,21 +32,21 @@ Project Constellation（中文意为星座、荟萃）, which will be officially
 
 - 新建第一个空仓库 ConstellationDev0（测试完成后已删除），使用README.md构建了第一个原型。
 
-- 在_config.yml中开启MathJax支持，通过Markdown的HTML支持，使得满足对Latex数学公式的支持。
+- 在`_config.yml`中开启MathJax支持，通过Markdown的HTML支持，使得满足对Latex数学公式的支持。
 
 - 发现在线维护GitHub Pages局限太多，不支持大多数git功能：不能在线commit多个文件的修改、提供主题过于丑陋等。
 
-- 开始探索Jekyll主题，最先选中的是[Contrast](https://github.com/niklasbuschmann/contrast)，在_config.yml中添加remote-theme可以直接加载主题，缺失可维护性，最终弃用。
+- 开始探索Jekyll主题，最先选中的是[Contrast](https://github.com/niklasbuschmann/contrast)，在`_config.yml`中添加remote-theme可以直接加载主题，缺失可维护性，最终弃用。
 
-- 转而使用Fork，但由于尚未理解整个Jekyll构造，添加[Katex](https://katex.org/)支持时候出现问题，找不到加入js代码的文件等，使用新的主题。
+- 转而使用Fork，但由于尚未理解整个Jekyll构造，添加[Katex](https://katex.org/)支持时候出现问题，找不到加入JS代码的文件等，使用新的主题。
 
 ### 2018/12/24-25
 
-- 在本地使用MSYS2的Mingw64构建Jekyll环境。Fork、Clone项目，使用(bundle exec) jekyll serve时候出现时区等问题，在_config.yml中添加timezone解决。
+- 在本地使用MSYS2的Mingw64构建Jekyll环境。Fork、Clone项目，使用`bundle exec jekyll serve`启动项目时出现时区等问题，在`_config.yml`中添加timezone解决。
 
-- 关于环境，存在问题是Ctrl+C停用serve之后，会留存名为“Ruby interupreter (CUI) 2.5.3p105[x64-mingw32]”和“Runtime Broker”进程，目前不影响效率，手动结束进程。
+- 关于环境，存在问题是Ctrl+C停用serve之后，会留存名为`Ruby interupreter (CUI) 2.5.3p105[x64-mingw32]`和`Runtime Broker`进程，目前不影响效率，手动结束进程。
 
-- 项目启动后，会将文件生成到静态的_site/中，直接修改_site/中的文件是无效的。最终通过**观察法**，理解了“拼接”起来的HTML页面和CSS文件关系，开发思路完全打开。
+- 项目启动后，会将文件生成到静态的`_site/`中，直接修改`_site/`中的文件是无效的。最终通过**观察法**，理解了“拼接”起来的HTML页面和CSS文件关系，开发思路完全打开。
 
 - [Constellation2019Dev1Leonids](https://github.com/sleeplessai/Constellation2019Dev1Leonids)是选中的另一款主题，同样是简洁风，有sidebar，第一感觉字体偏小，图片很大。以狮子座流星雨为名，的确很吸引我。
 
@@ -54,30 +54,30 @@ Project Constellation（中文意为星座、荟萃）, which will be officially
 
 ### 2018/12/26-27
 
-- 今天主要进度是在26日凌晨和傍晚至晚上完成的。
+- 今天进度主要是在26日凌晨和傍晚至晚上完成的。
 
 - 博客的核心理念是表达（express）,核心是post，故暂时从项目中删除tags（词云）、resume（简历）、about（关于）页面。
 
 - 26日凌晨，通读了[Constellation2019Dev1Leonids](https://github.com/sleeplessai/Constellation2019Dev1Leonids)的代码，在主题色和头像文件上做出了更改，我对原生配色不满意，需要重新寻找配色。
 
-- 顺带解决了[Katex](https://katex.org/)的支持问题，拥有了更快的数学公式渲染速度。到CDN找到最新版本的源，由于使用了kramdown解析，数学书写全部改用双dollars的形式。
+- 顺带解决了[Katex](https://katex.org/)的支持问题，拥有了更快的数学公式渲染速度。到CDN找到最新版本的源，由于使用了kramdown解析，数学书写全部改用双dollar的形式。
 
-- 26日下午，对代码高亮的支持进行检查，同期对主题色进行搜索。[配色网](http://peise.net)成为主战场，翻阅试验了6小时之后，于26日晚10时找到满意的配色。最后使用了
+- 26日下午，对主题色、代码高亮色进行挑选，在[配色网](http://peise.net)挑选、试验了6小时之后，于26日晚10时找到满意的配色。最终使用了[richleland/pygments-css](https://github.com/richleland/pygments-css/blob/master/vs.css)VS的配色组作为基础，玫红深紫结合主题青为主色，完成了高亮配色。
 
-- Windows的字体渲染的确还是赶不上MacOS，在我的X24Q屏幕以2K分辨率观察字体，边缘还是有不少模糊，在使用亮色系时，字体会变得更加模糊。如果字体不会冲突，代码高亮渲染颜色不会出现歧义，[Constellation](https://sleeplessai.github.io/)的Dev1版本颜色就不作改变了。
+- Windows的字体渲染的确还是赶不上MacOS，在我的X24Q屏幕以2K分辨率观察字体，边缘还是有不少模糊，在使用亮色系时，字体会变得更加模糊。如果字体不会冲突，代码高亮渲染颜色不会出现歧义，Dev1版本的颜色就不作改变了。
 
 ### 2018/12/29-30
 
-- 29日晚，完成了Comment功能的初步实现，基于[Gitalk](https://github.com/gitalk/gitalk)；[Disqus](https://disqus.com/)由于载入、用户登陆问题，弃用。
+- 29日晚，完成了Comment功能的初步实现，基于[Gitalk](https://github.com/gitalk/gitalk)。[Disqus](https://disqus.com/)由于载入、用户登陆问题，弃用。
 
 - [Disqus](https://disqus.com/)样式和Emoji样式非常棒，后续中有想法将更漂亮的Emoji样式加入，还需修改[Gitalk](https://github.com/gitalk/gitalk)样式使其与[Constellation](https://sleeplessai.github.io/)风格更一致。
 
 - 目前还没有完成自动Initialize Comment的功能；另外，Console中会出现401（Unauthorized）错误。
 
-- 考虑到让更多朋友加入讨论，需要引入除GitHub账户以外的OAuth（QQ，WeChat，Weibo等)，目前使用的[Gitalk](https://github.com/gitalk/gitalk)将会被增强或自己开发一个新的Comment模块。
+- 考虑到让更多朋友加入讨论，需要引入除GitHub账户以外的OAuth，目前使用的[Gitalk](https://github.com/gitalk/gitalk)将会被增强或自己开发一个新的Comment模块。
 
-- 30日凌晨，完成了小部分代码结构以优化效率：删除了独立的JS脚本，合并到统一的HTML文件中的script标签中，并为Comment和数学渲染的JS代码模块添加了载入判断，以优化载入速度。
+- 30日凌晨，完成了小部分代码结构优化：删除了独立的JS脚本，合并到统一的HTML文件中的script标签中，并为Comment和数学渲染的JS代码模块添加了载入判断，以优化载入速度。
 
-- 将原先内置的jQuery删除，更换最新版本的在线源，由[CDNJS](https://cdnjs.com/)提供。
+- 将原先内置的jQuery删除，所有JS库均更新至最新版本，在线源由[CDNJS](https://cdnjs.com/)提供。
 
 - 今日工作开始前，由于pacman将Ruby更新到2.6.0，导致坏境崩掉了，原因是Gem依赖中的ffi-1.9.25包仅支持到Ruby < 2.6.0。通过移除Ruby 2.6.0的包，到源上找了Ruby 2.5.3的包手工安装并在`/etc/pacman.conf`添加了`IgnorePkg = mingw-w64-x86_64-ruby`避免日常滚动破坏依赖。此外，开发前切记使用`bundle update`更新或使用`bundle install`安装所需的Gem包。

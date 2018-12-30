@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "First Post"
+title: "Mathematics"
 date: 2018-12-23 00:00:10 +0800
 comments: false
-categories: [dev]
+categories: [test]
 excerpt: "Constellation 意为星座、荟萃。"
 # stickie: true
 math: true
