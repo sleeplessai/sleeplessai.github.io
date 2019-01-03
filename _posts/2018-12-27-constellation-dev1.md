@@ -50,7 +50,7 @@ Project Constellation（中文意为星座、荟萃）, which will be officially
 
 - [Constellation2019Dev1Leonids](https://github.com/sleeplessai/Constellation2019Dev1Leonids)是选中的另一款主题，同样是简洁风，有sidebar，第一感觉字体偏小，图片很大。以狮子座流星雨为名，的确很吸引我。
 
-- [mirror-web](https://github.com/sleeplessai/mirror-web)是清华大学开源镜像站的网站项目。作为[我唯一指定的开源镜像站](https://tuna.moe/)，它的页面设计和功能真的非常棒，一度成为我想模仿的对象，因此引发了无人应答的[question not issue #26](https://github.com/tuna/blogroll/issues/26)。通过这个项目，很早之前就了解有Jekyll这么个玩意，那时候只认为Jekyll是一个静态页面生成脚本，语言也是我不会的Ruby。没想到却与[Constellation项目](https://sleeplessai.github.io/)的技术路线不谋而合。本次fork该项目是用于理解Jekyll的运行原理，感谢清华大学的TUNA协会。
+- [mirror-web](https://github.com/sleeplessai/mirror-web)是清华大学开源镜像站的网站项目。作为我唯一指定的[开源镜像站](https://tuna.moe/)，它的页面设计和功能真的非常棒，一度成为我想模仿的对象，因此引发了无人应答的[question not issue #26](https://github.com/tuna/blogroll/issues/26)。通过这个项目，很早之前就了解有Jekyll这么个玩意，那时候只认为Jekyll是一个静态页面生成脚本，语言也是我不会的Ruby。没想到却与[Constellation项目](https://sleeplessai.github.io/)的技术路线不谋而合。本次fork该项目是用于理解Jekyll的运行原理，感谢清华大学的TUNA协会。
 
 ### 2018/12/26-27
 
