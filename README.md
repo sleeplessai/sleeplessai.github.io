@@ -5,7 +5,7 @@ Project Constellation（中文意为星座、荟萃）, which will be officially
 DevJournals（开发志）: [Project Constellation Dev1](https://sleeplessai.github.io/articles/2018-12/constellation-dev1
 )
 
-## Don Not Fork the Repository
+## Plz Do Not Fork the Repository
 
 **PLEASE DO NOT** fork this repository, especially the original posts, as this project is modified from original project. And Project Constellation is still under developed. If you like this Jekyll theme, please fork from the original, [renyuanz/leonids](https://github.com/renyuanz/leonids) and build yours.
 
