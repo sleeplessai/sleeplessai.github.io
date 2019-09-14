@@ -10,7 +10,7 @@ stickie: true
 
 ## Project Constellation
 
-Project Constellation（中文意为星座、荟萃）, which will be officially released in 2019 January, is the brand new blog powered by Jekyll and hosted on GitHub Pages of mine.
+Project Constellation（中文意为星座、荟萃）, which will be officially released in 2019 January, is my brand new blog powered by Jekyll and hosted on GitHub Pages.
 
 ## The Brief Story of Constellation
 
@@ -81,3 +81,9 @@ Project Constellation（中文意为星座、荟萃）, which will be officially
 - 将原先内置的jQuery删除，所有JS库均更新至最新版本，在线源由[CDNJS](https://cdnjs.com/)提供。
 
 - 今日工作开始前，由于pacman将Ruby更新到2.6.0，导致坏境崩掉了，原因是Gem依赖中的ffi-1.9.25包仅支持到Ruby < 2.6.0。通过移除Ruby 2.6.0的包，到源上找了Ruby 2.5.3的包手工安装并在`/etc/pacman.conf`添加了`IgnorePkg = mingw-w64-x86_64-ruby`避免日常滚动破坏依赖。此外，开发前切记使用`bundle update`更新或使用`bundle install`安装所需的Gem包。
+
+### 2019/09/14
+
+- 博客的Ruby升级到`ruby 2.6.3p62 (2019-04-16 revision 67580) [x64-mingw32]`，成功生成。
+
+- 删除了test分类下的post，修改了一些措辞。
