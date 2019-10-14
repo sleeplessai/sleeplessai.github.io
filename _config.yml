@@ -3,11 +3,11 @@
 # Site wide configuration
 ####################################
 #
-title: Constellation Dev
+title: Constellation (Dev1)
 email: katrielle.layton@outlook.com
 description: Desc
-url: 
-keywords: ["blog", "jekyll"]
+url:
+keywords: ["blog", "jekyll", "constellation", "sleeplessai", "ai", "ml"]
 
 #
 ###################################
@@ -34,18 +34,17 @@ kramdown:
 ####################################
 #
 owner:
-  authors: ['Molasses']
-  name: Constellation Dev1
+  name: Constellation (Dev1)
   avatar: molasses-avatar.jpg
-  job: "Molasses's still developing blog"
-  bio: "非同凡想，付诸行动  Think Different, Take Action"
+  job: "a work-in-progress blog by molasses"
+  bio: "非同凡想，付诸行动 Think Different, Take Action"
   email: katrielle.layton@outlook.com
   disqus-shortname:
   twitter: #username
   facebook: #username
   google:
     plus: #username
-    analytics:
+    analytics: UA-149964628-1
     verify:
     ad-client:
     ad-slot:

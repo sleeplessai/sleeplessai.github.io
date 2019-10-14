@@ -92,3 +92,8 @@ Project Constellation（中文意为星座、荟萃）, which will be officially
 
 - 最近学习阵地转移到316实验室，HP Z840上系统是`Ubuntu 18.04.3 LTS`，博客的Ruby版本选择了`ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux-gnu]`。原因是，Snap Store里Ruby的版本是2.6.5，找不到对应版本的`ruby-dev`包，因此缺少`ruby.h zlib.h`等头文件，以致于某些native extension无法生成，只能通过`sudo apt install ruby-dev libz-dev`安装。
 
+### 2019/10/14
+
+- 现已加入Google Analytics。
+
+- 开始测试全新`蓝紫`和`四季`配色方案。
