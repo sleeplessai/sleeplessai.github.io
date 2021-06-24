@@ -4,29 +4,29 @@
 ####################################
 #
 title: Constellation (Dev1)
-email: katrielle.layton@outlook.com
-description: Desc
+email: molasses@zjnu.edu.cn
+description: omitted.
 url:
-keywords: ["blog", "jekyll", "constellation", "sleeplessai", "ai", "ml"]
+keywords: ["blog", "jekyll", "constellation", "sleeplessai", "ai", "ml", "computer vision"]
 
 #
 ###################################
 # Jekyll configuration
 ####################################
 #
-timezone:          Asia/Shanghai
-# highlighter:       rouge
+timezone: Asia/Shanghai
+highlighter: rouge
 excerpt_separator: <!--more-->
-permalink:         /articles/:year-:month/:title
+permalink: /articles/:year-:month/:title
 
-markdown:          kramdown
+markdown: kramdown
 kramdown:
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
   enable_coderay: false
-  math_engine: mathjax
+  # math_engine: mathjax
 
 #
 ###################################
@@ -38,7 +38,7 @@ owner:
   avatar: molasses-avatar.jpg
   job: "a work-in-progress blog by molasses"
   bio: "非同凡想，付诸行动 Think Different, Take Action"
-  email: katrielle.layton@outlook.com
+  email: molasses@zjnu.edu.cn
   disqus-shortname:
   twitter: #username
   facebook: #username
@@ -84,4 +84,3 @@ gitalk:
   client_id: 5019bd38beb4c52307f7
   client_secret: ae4e9876955354a5a875b9b0243c2a59e9eaedf7
   repo: sleeplessai.github.io.gitalk
-  
